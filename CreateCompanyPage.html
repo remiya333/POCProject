@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Company Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="C:\Project\Main.css">
+</head>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+<body>
+<!-- <h1>Create Company Page</h1> -->
+
+
+<div class="wrapper">
+  <nav class="sticky">
+    <ul class="main-nav">
+      <li>Logo</li>
+      <li><a href="">Create Company Page</a></li>
+      <li><a href="">Create/Edit User Page</a></li>
+      <li class="push"><a href="" >View User Page</a></li>
+      <!-- <li><a href="">About</a></li> -->
+    </ul>
+  </nav>
+
+  
+  
+  <div class="container">
+    <h3> Create Company Page</h3> 
+  <form id="form_id" autocomplete="off">
+    
+    <div class="row">
+    <div class="col-25">
+      <label for="Companyname">Company Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Companyname" name="Companyname" placeholder="Company Name" required><br>
+      <span class="error" id="CompanyNameError"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Managername">Manager Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Managername" name="Managername" placeholder="Manager Name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Adminname">Admin Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Adminname" name="Adminname" placeholder="Admin Name" required><br>
+      <span class="error" id="AdminnameError"></span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="address">Addreess</label>
+    </div>
+    <div class="col-75">
+      <textarea id="address" name="address" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Phonenumber">Phone number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Phonenumber" name="Phonenumber" placeholder="Phone Number"><br>
+      <span class="error" id="Phonenumberrror"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Adminnumber">Admin Mobile Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Adminnumber" name="Adminnumber" placeholder="Admin Mobile Number"><br>
+      <span class="error" id="Adminnumberrror"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="AdminEmail">Admin Email</label>
+    </div>
+    <div class="col-75">
+      <input type="email" id="AdminEmail" name="AdminEmail" placeholder="Admin Email" required>
+      <span class="error" id="AdminEmailerror"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Faxnumber">Fax Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Faxnumber" name="Faxnumber" placeholder="Fax Number"><br>
+      <span class="error" id="FaxNumbererror"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Logoupload">Logo Upload</label>
+    </div>
+    <div class="col-75">
+      <input type="file" id="Logoupload" name="Logoupload"><br>
+      <span class="error" id="UploadError"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Colorscheme1">Color Scheme 1</label>
+    </div>
+    <div class="col-75">
+      <input type="color" id="Colorscheme1" name="Colorscheme1" placeholder="Color Scheme1">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Colorscheme2">Color Scheme 2</label>
+    </div>
+    <div class="col-75">
+      <input type="color" id="Colorscheme2" name="Colorscheme2" placeholder="Color scheme2">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Department">Departments</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Department" name="Department" placeholder="Department"><br>
+      <span class="error" id="DepartmentError"></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Jobtitle">Job Titles</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="Jobtitle" name="Jobtitle" placeholder="Job Titles"><br>
+      <span class="error" id="JobTitleError"></span>
+    </div>
+  </div>
+
+  <div class="row">
+    <input type="submit" value="Submit" id="submit">
+    <!-- <input type="button" value="Submit" id="submit"> -->
+  </div>
+
+  </form> 
+
+
+  <footer>Created by Remiya</footer> 
+ 
+</div>
+      
+    
+
+</div>>
+<script src="Main_1.js"></script>
+</body>
+</html>
